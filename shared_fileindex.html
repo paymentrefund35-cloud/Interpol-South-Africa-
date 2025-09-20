@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERPOL South Africa - International Criminal Police Organization</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #003087;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #0055a4;
+            padding: 1rem;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .highlights, .quick-info, .notices, .contact-form {
+            margin-bottom: 2rem;
+        }
+        .highlights h2, .quick-info h2, .notices h2, .contact-form h2 {
+            color: #003087;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        .highlight-item, .quick-info-item, .notice-item {
+            background-color: white;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .highlight-item p, .quick-info-item p, .notice-item p {
+            margin: 0.5rem 0;
+        }
+        .highlight-item a, .quick-info-item a, .notice-item a {
+            color: #0055a4;
+            text-decoration: none;
+        }
+        .highlight-item a:hover, .quick-info-item a:hover, .notice-item a:hover {
+            text-decoration: underline;
+        }
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 500px;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        .contact-form button {
+            background-color: #0055a4;
+            color: white;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .contact-form button:hover {
+            background-color: #003087;
+        }
+        .contact-form button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+        .message {
+            padding: 1rem;
+            border-radius: 4px;
+            margin-top: 1rem;
+            display: none;
+        }
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        footer {
+            background-color: #003087;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            width: 100%;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>INTERPOL South Africa</h1>
+        <p>The International Criminal Police Organization - South Africa</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#notices">Notices</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section class="highlights">
+            <h2>Highlights</h2>
+            <div class="highlight-item">
+                <p><strong>Asia-Pacific law enforcement experts gather to enhance efforts to recover illicit assets</strong></p>
+                <p>INTERPOL Silver Notice workshop strengthens international cooperation on targeting criminal finances.</p>
+            </div>
+            <div class="highlight-item">
+                <p><strong>INTERPOL event shares tips for staying safe online</strong></p>
+                <p>First-ever Youth Cybercrime Awareness Webinar highlights online safety, critical thinking, and responsible digital behavior.</p>
+            </div>
+            <div class="highlight-item">
+                <p><strong>INTERPOL releases new information on globalization of scam centres</strong></p>
+            </div>
+            <div class="highlight-item">
+                <p><strong>INTERPOL’s African Conference targets transnational organized crime</strong></p>
+                <p>Police chiefs gather to strengthen partnerships to address regional crime threats.</p>
+            </div>
+        </section>
+        <section class="quick-info">
+            <h2>Quick Response</h2>
+            <div class="quick-info-item">
+                <p><strong>24 hours</strong></p>
+                <p>An INTERPOL Incident Response Team can be briefed, equipped, and deployed anywhere in the world within 12 to 24 hours.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="quick-info-item">
+                <p><strong>Analysis reports</strong></p>
+                <p>We produce intelligence reports to help national law enforcement agencies prepare for new security challenges and establish investigative priorities.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </section>
+        <section class="notices">
+            <h2>Help Us Find Them</h2>
+            <div class="notice-item">
+                <p><strong>View Red Notices</strong></p>
+                <p>View and search public Red Notices for wanted persons.</p>
+                <a href="#">See notices</a>
+            </div>
+            <div class="notice-item">
+                <p><strong>View Yellow Notices</strong></p>
+                <p>View and search public Yellow Notices for missing persons.</p>
+                <a href="#">See notices</a>
+            </div>
+        </section>
+        <section class="contact-form" id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="hidden" name="access_key" value="ee8ae584-352f-41ee-a0ed-6069116ae53f">
+                <input type="checkbox" name="botcheck" style="display: none;">
+                <input type="text" name="name" id="name" placeholder="Your Name" required>
+                <input type="email" name="email" id="email" placeholder="Your Email" required>
+                <textarea name="message" id="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" id="submitBtn">Send Message</button>
+            </form>
+            <div id="message" class="message"></div>
+        </section>
+    </div>
+    <footer>
+        <p>INTERPOL 2025. All Rights Reserved.</p>
+        <p>Connect with us: 
+            <a href="#">Contact INTERPOL</a> | 
+            <a href="#">Careers</a> | 
+            <a href="#">Procurement</a> | 
+            <a href="#">About the CCF</a>
+        </p>
+        <p>Resources: 
+            <a href="#">News and Events</a> | 
+            <a href="#">Information for Journalists</a> | 
+            <a href="#">Documents</a> | 
+            <a href="#">INTERPOL Spotlight</a>
+        </p>
+        <p>Policies: 
+            <a href="#">Cookie Policy</a> | 
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Terms of Use</a> | 
+            <a href="#">Name and Logo</a>
+        </p>
+    </footer>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const submitBtn = document.getElementById('submitBtn');
+            const messageDiv = document.getElementById('message');
+            const formData = new FormData(this);
+
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+            messageDiv.style.display = 'none';
+
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    messageDiv.textContent = 'Thank you! Your message has been sent successfully.';
+                    messageDiv.className = 'message success';
+                    this.reset();
+                } else {
+                    messageDiv.textContent = 'Error: ' + (data.message || 'Submission failed. Please try again.');
+                    messageDiv.className = 'message error';
+                }
+                messageDiv.style.display = 'block';
+            })
+            .catch(error => {
+                messageDiv.textContent = 'An error occurred while submitting the form. Please check your connection and try again.';
+                messageDiv.className = 'message error';
+                messageDiv.style.display = 'block';
+                console.error('Error:', error);
+            })
+            .finally(() => {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Send Message';
+            });
+        });
+    </script>
+</body>
+</html>
